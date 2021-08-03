@@ -12,6 +12,9 @@ public class ArraysDemo {
 			System.out.println(temp);
 		}
 		
+		int a=100;
+		
+		a=200;
 		
 		
 	}
