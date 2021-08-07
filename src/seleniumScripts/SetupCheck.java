@@ -19,13 +19,7 @@ public class SetupCheck {
 		
 		// Step 3: open a url on chrome browser
 		
-		driver.get("https://www.wikipedia.org/");
-		
-		
-		
-		
-		
-		
+		driver.get("https://www.wikipedia.org/");	
 
 	}
 
