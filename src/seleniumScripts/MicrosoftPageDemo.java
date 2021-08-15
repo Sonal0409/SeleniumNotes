@@ -4,19 +4,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class MicrosoftPageDemo {
+public class MicrosoftPageDemo extends ConfigurationTest {
+	
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException{
 		// TODO Auto-generated method stub
 
-		 System.setProperty("webdriver.chrome.driver", "C:\\Users\\vishal mittal\\Downloads\\chromedriver_win32 (29)\\chromedriver.exe");
-			
-			WebDriver driver = new ChromeDriver();
-			
-			driver.manage().window().maximize();
-			
-			Thread.sleep(2000);
-			
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\vishal mittal\\Downloads\\chromedriver_win32 (29)\\chromedriver.exe");
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		
 			driver.get("https://login.live.com/");
 			
 			Thread.sleep(2000);
@@ -26,7 +25,9 @@ public class MicrosoftPageDemo {
 		Thread.sleep(2000);
 		
 		////*[@id="idSIButton9"]
+	
 		
+		//tagname[@attribute='value']
 		driver.findElement(By.xpath("//input[@id='idSIButton9']")).click();
 			
 		Thread.sleep(3000);	
